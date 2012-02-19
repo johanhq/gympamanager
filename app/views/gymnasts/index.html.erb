@@ -1,0 +1,27 @@
+<h1>Listing gymnasts</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Username</th>
+    <th>Password</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @gymnasts.each do |gymnast| %>
+  <tr>
+    <td><%= gymnast.name %></td>
+    <td><%= gymnast.username %></td>
+    <td><%= gymnast.password %></td>
+    <td><%= link_to 'Show', gymnast %></td>
+    <td><%= link_to 'Edit', edit_gymnast_path(gymnast) %></td>
+    <td><%= link_to 'Destroy', gymnast, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Gymnast', new_gymnast_path %>
