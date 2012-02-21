@@ -1,5 +1,15 @@
 Gympamanager::Application.routes.draw do
-  get "home/index"
+  get 	"users/new"
+  get 	"home/index"
+  get	"home/help"
+  get	"home/about"
+  get	"home/contact"
+  
+  match '/signup',  :to => 'users#new'
+  
+  match '/contact', :to => 'home#contact'
+  match '/about',   :to => 'home#about'
+  match '/help',    :to => 'home#help'
 
   resources :gymnasts
 
