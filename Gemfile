@@ -33,6 +33,9 @@ group :test do
   gem 'spork', '0.9.0.rc8'
 end
 
+group :production do
+  gem 'pg'
+end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -47,7 +50,3 @@ end
 
 # To use debugger
 # gem 'ruby-debug'
-group :production do
-  gem 'therubyracer-heroku', '0.8.1.pre3'
-  gem 'pg'
-end
