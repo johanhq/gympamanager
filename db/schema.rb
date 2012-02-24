@@ -12,12 +12,5 @@
 
 ActiveRecord::Schema.define(:version => 20120219002420) do
 
-  create_table "gymnasts", :force => true do |t|
-    t.string   "name"
-    t.string   "username"
-    t.string   "password"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
 
 end

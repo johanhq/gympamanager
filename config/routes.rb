@@ -11,8 +11,6 @@ Gympamanager::Application.routes.draw do
   match '/about',   :to => 'home#about'
   match '/help',    :to => 'home#help'
 
-  resources :gymnasts
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
